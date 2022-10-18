@@ -9,7 +9,7 @@ month = 0  # количество месяцев, которое можно пр
 loss = salary - (spend + (spend * (month * increase)))
 
 
-while money_capital >= (spend + (spend * ((month + 1) * increase))):
+while money_capital >= (spend + (1 + increase)):
     month += 1
     loss = salary - (spend + (spend * (month * increase)))
     money_capital += loss
