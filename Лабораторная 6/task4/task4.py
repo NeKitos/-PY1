@@ -15,7 +15,7 @@ def csv_to_list_dict(filename, delimiter=',', new_line='\n'):
             result.append({})
 
             for i, _ in enumerate(heads):
-                result[-1][heads[i]] = fields[i]
+                result[-1][heads[i]] = fields[i] # Берем последний элемент таблицы из словаря, добавляем в него элемент
     return result
 
 
