@@ -18,7 +18,7 @@ def to_csv_file(OUTPUT_FILE, headers_list, data, delimiter=',', new_line='\n'):
         f.write(delimiter.join(headers_list) + new_line)
         for r in data:
             f.write(delimiter.join(r) + new_line)
-    return o
+    return
 
 with open(OUTPUT_FILE) as output_f:
     for line in output_f:
